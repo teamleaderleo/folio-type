@@ -1,0 +1,47 @@
+<!doctype html>
+<!-- The README's preview: the three faces as Folio Type sets them in cmux. Rendered by tools/render.sh. -->
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: "Folio Hanken Grotesk"; src: url("../fonts/hanken-grotesk.woff2") format("woff2"); font-weight: 100 900; }
+@font-face { font-family: "Folio Newsreader"; src: url("../fonts/newsreader.woff2") format("woff2"); font-weight: 100 900; }
+@font-face { font-family: "Folio JetBrains Mono"; src: url("../fonts/jetbrains-mono.woff2") format("woff2"); font-weight: 100 900; }
+:root { --ui: "Folio Hanken Grotesk", sans-serif; --prose: "Folio Newsreader", serif; --mono: "Folio JetBrains Mono", monospace; }
+* { box-sizing: border-box; margin: 0; }
+body { width: 1280px; height: 800px; background: #ecebe6; color: #22211f; font-family: var(--ui); display: flex; padding: 28px; gap: 20px; }
+.side { width: 250px; background: #f6f5f1; border-radius: 12px; padding: 18px 14px; font-size: 13px; }
+.side h4 { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: #77756f; margin: 14px 6px 6px; font-weight: 600; }
+.row { padding: 7px 8px; border-radius: 7px; }
+.row.on { background: #e3e1da; font-weight: 600; }
+.chat { flex: 1; background: #fbfaf7; border-radius: 12px; padding: 28px 40px; display: flex; flex-direction: column; gap: 18px; }
+.you { align-self: flex-end; background: #e9e7e1; border-radius: 14px; padding: 10px 14px; font-size: 14px; max-width: 70%; }
+.reply { font-family: var(--prose); font-size: 17px; line-height: 27px; max-width: 720px; }
+.reply h2 { font-family: var(--ui); font-size: 19px; font-weight: 650; margin-bottom: 6px; }
+.reply code { font-family: var(--mono); font-size: 14px; background: #efede7; padding: 1px 5px; border-radius: 4px; }
+pre { font-family: var(--mono); font-size: 13.5px; line-height: 21px; background: #f1efea; border-radius: 9px; padding: 14px 16px; max-width: 720px; }
+.composer { margin-top: auto; border: 1px solid #dcd9d1; border-radius: 12px; padding: 14px 16px; font-size: 14px; color: #8a877f; }
+.tag { font-size: 12px; color: #77756f; }
+</style></head><body>
+<div class="side">
+  <div class="row on">Folio Type</div>
+  <h4>Today</h4>
+  <div class="row">Fix the release notes</div>
+  <div class="row">Rename the sidebar groups</div>
+  <div class="row">Il1| O0 rn m cl d</div>
+  <h4>Fonts</h4>
+  <div class="row">Hanken Grotesk: chrome</div>
+  <div class="row">Newsreader: replies</div>
+  <div class="row">JetBrains Mono: code</div>
+</div>
+<div class="chat">
+  <div class="you">Can you make the chat read more like a book?</div>
+  <div class="reply">
+    <h2>A text serif for replies</h2>
+    <p>Long answers now set in Newsreader, a serif drawn for reading on screens, a step larger than the
+    chrome so a paragraph keeps an even texture. The sidebar, tabs and composer stay in Hanken Grotesk,
+    a warm grotesque, and code such as <code>cmux snippet install</code> stays in JetBrains Mono.</p>
+  </div>
+<pre>cmux snippet install github.com/teamleaderleo/folio-type
+# undo: cmux snippet remove teamleaderleo/folio-type</pre>
+  <div class="composer">Ask anything <span class="tag">· Hanken Grotesk</span></div>
+</div>
+</body></html>

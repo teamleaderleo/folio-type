@@ -1,0 +1,12 @@
+{
+  "cmuxSnippet": 1,
+  "cmuxProfile": 1,
+  "id": "teamleaderleo/folio-type",
+  "name": "Folio Type",
+  "description": "Bookish type for cmux: a warm grotesque for the chrome, a text serif for replies and Markdown, a clear mono for code. Free fonts, inlined, nothing to install.",
+  "version": "1.0.0",
+  "engines": { "cmux": ">=0.70.0" },
+  "screenshots": ["screenshots/preview.png"],
+  "repository": "https://github.com/teamleaderleo/folio-type",
+  "license": "MIT AND OFL-1.1"
+}
